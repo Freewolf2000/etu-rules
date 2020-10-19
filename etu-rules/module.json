@@ -1,0 +1,87 @@
+{
+   "name": "etu-rules",
+   "title": "Rule Set: East Texas University",
+   "description": "Basic ETU setting rules and data",
+   "author": "Pinnacle Entertianment Group",
+   "version": "0.1.0",
+   "minimumCoreVersion": "0.6.6",
+   "compatibleCoreVersion":"0.6.6",
+   "systems": ["swade"],
+   "url": "https://github.com/Freewolf2000/etu-rules",
+   "manifest": "https://raw.githubusercontent.com/Freewolf2000/etu-rules/master/etu-rules/module.json",
+   "download": "https://github.com/Freewolf2000/etu-rules/raw/master/etu-rules.zip",
+   "packs": [
+    {
+      "name": "Edges-SWADE",
+      "label": " Edges SWADE",
+      "system": "swade",
+      "path": "./packs/edges-etu.db",
+      "entity": "Item",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Hindrances-SWADE",
+      "label": "Hindrances SWADE",
+      "system": "swade",
+      "path": "./packs/hindrances-etu.db",
+      "entity": "Item",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Powers-SWADE",
+      "label": "Powers SWADE",
+      "system": "swade",
+      "path": "./packs/powers-etu.db",
+      "entity": "Item",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Gear-ETU",
+      "label": "Gear ETU",
+      "system": "swade",
+      "path": "./packs/gear-etu.db",
+      "entity": "Item",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Monster-Creation-ETU",
+      "label": "Monster Creation ETU",
+      "system": "swade",
+      "path": "./packs/monster-creation-etu.db",
+      "entity": "Item",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Extracurricular-Activities-ETU",
+      "label": "Extracurricular Activities ETU",
+      "system": "swade",
+      "path": "./packs/extracurricular-activites-etu.db",
+      "entity": "JournalEntry",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Pinebox-Gazetteer-ETU",
+      "label": "Pinebox-Gazetteer ETU",
+      "system": "swade",
+      "path": "./packs/pinebox-gazetteer-etu.db",
+      "entity": "JournalEntry",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Setting-Rules-ETU",
+      "label": "Setting Rules ETU",
+      "system": "swade",
+      "path": "./packs/setting-rules-etu.db",
+      "entity": "JournalEntry",
+      "module": "etu-rules"
+    },
+    {
+      "name": "Tables-ETU",
+      "label": "Tables ETU",
+      "system": "swade",
+      "path": "./packs/tables-etu.db",
+      "entity": "RollTable",
+      "module": "etu-rules"
+    }
+  ]
+}
