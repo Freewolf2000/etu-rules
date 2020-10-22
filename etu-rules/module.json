@@ -3,7 +3,7 @@
    "title": "Rule Set: East Texas University",
    "description": "Basic ETU setting rules and data",
    "author": "Pinnacle Entertianment Group",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "minimumCoreVersion": "0.6.6",
    "compatibleCoreVersion":"0.6.6",
    "systems": ["swade"],
