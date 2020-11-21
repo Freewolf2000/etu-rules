@@ -5,7 +5,7 @@
    "author": "Pinnacle Entertianment Group",
    "version": "0.1.1",
    "minimumCoreVersion": "0.6.6",
-   "compatibleCoreVersion":"0.6.6",
+   "compatibleCoreVersion":"0.7.7",
    "systems": ["swade"],
    "url": "https://github.com/Freewolf2000/etu-rules",
    "manifest": "https://raw.githubusercontent.com/Freewolf2000/etu-rules/master/etu-rules/module.json",
