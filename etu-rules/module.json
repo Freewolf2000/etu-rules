@@ -1,87 +1,77 @@
 {
    "name": "etu-rules",
    "title": "Rule Set: East Texas University",
-   "description": "Basic ETU setting rules and data",
-   "author": "Pinnacle Entertianment Group",
-   "version": "0.1.2",
-   "minimumCoreVersion": "0.6.6",
-   "compatibleCoreVersion":"0.7.7",
-   "systems": ["swade"],
+   "description": "This is the additional ruleset for the Eberron Campaign Setting conversted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and MAgical Items for the Eberron Campaign Setting have been added.",
+   "author": "Freewolf2000",
+   "version": "0.1.0",
+   "minimumCoreVersion": "0.7.5",
+   "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/etu-rules",
    "manifest": "https://raw.githubusercontent.com/Freewolf2000/etu-rules/master/etu-rules/module.json",
    "download": "https://github.com/Freewolf2000/etu-rules/raw/master/etu-rules.zip",
+   "esmodules": [
+       "./scripts/etu-rules.js"
+   ],
    "packs": [
-    {
-      "name": "Edges-SWADE",
-      "label": " Edges SWADE",
-      "system": "swade",
-      "path": "./packs/edges-etu.db",
-      "entity": "Item",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Hindrances-SWADE",
-      "label": "Hindrances SWADE",
-      "system": "swade",
-      "path": "./packs/hindrances-etu.db",
-      "entity": "Item",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Powers-SWADE",
-      "label": "Powers SWADE",
-      "system": "swade",
-      "path": "./packs/powers-etu.db",
-      "entity": "Item",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Gear-ETU",
-      "label": "Gear ETU",
-      "system": "swade",
-      "path": "./packs/gear-etu.db",
-      "entity": "Item",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Monster-Creation-ETU",
-      "label": "Monster Creation ETU",
-      "system": "swade",
-      "path": "./packs/monster-creation-etu.db",
-      "entity": "Item",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Extracurricular-Activities-ETU",
-      "label": "Extracurricular Activities ETU",
-      "system": "swade",
-      "path": "./packs/extracurricular-activites-etu.db",
-      "entity": "JournalEntry",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Pinebox-Gazetteer-ETU",
-      "label": "Pinebox-Gazetteer ETU",
-      "system": "swade",
-      "path": "./packs/pinebox-gazetteer-etu.db",
-      "entity": "JournalEntry",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Setting-Rules-ETU",
-      "label": "Setting Rules ETU",
-      "system": "swade",
-      "path": "./packs/setting-rules-etu.db",
-      "entity": "JournalEntry",
-      "module": "etu-rules"
-    },
-    {
-      "name": "Tables-ETU",
-      "label": "Tables ETU",
-      "system": "swade",
-      "path": "./packs/tables-etu.db",
-      "entity": "RollTable",
-      "module": "etu-rules"
-    }
-  ]
+     {
+       "label": "ETU Bestiary Abilities",
+       "name": "etu-bestiary-abilities",
+       "entity": "Item",
+       "path": "packs/etu-bestiary-abilities.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Edges",
+       "name": "etu-edges",
+       "entity": "Item",
+       "path": "packs/etu-edges.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Hindrances",
+       "name": "etu-hindrances",
+       "entity": "Item",
+       "path": "packs/etu-hindrances.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Powers",
+       "name": "etu-powers",
+       "entity": "Item",
+       "path": "packs/etu-powers.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Setting Rules",
+       "name": "etu-setting-rules",
+       "entity": "JournalEntry",
+       "path": "packs/etu-setting-rules.db",
+       "system": "swade",
+       "module": "etu-rules"
+     },
+     {
+       "label": "ETU Tables",
+       "name": "etu-tables",
+       "entity": "RollTable",
+       "path": "packs/etu-tables.db",
+       "system": "swade",
+       "module": "etu-rules"
+     }
+   ],
+   "systems": ["swade"],
+   "dependencies": [
+     {
+        "type": "module",
+        "name": "compendium-folders",
+        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+      },
+      {
+        "name": "swade",
+        "type": "system"
+      }
+    ]
 }
