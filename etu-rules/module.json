@@ -3,7 +3,7 @@
    "title": "Rule Set: East Texas University",
    "description": "This is the additional ruleset for the East Texas University Setting for Savage Worlds Adventure Edition. All the setting Edges, Powers, Hindrances, Tables, Equipment and Setting Rules have been added.",
    "author": "Freewolf2000",
-   "version": "0.4.0",
+   "version": "0.5.0",
    "minimumCoreVersion": "0.7.5",
    "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/etu-rules",
@@ -13,6 +13,14 @@
        "./scripts/etu-rules.js"
    ],
    "packs": [
+     {
+         "label": "ETU Bestiary",
+         "name": "etu-bestiary",
+         "entity": "Actor",
+         "path": "packs/etu-bestiary.db",
+         "system": "swade",
+         "module": "etu-rules"
+     },
      {
        "label": "ETU Bestiary Abilities",
        "name": "etu-bestiary-abilities",
