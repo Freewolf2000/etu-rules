@@ -1,8 +1,18 @@
 Hooks.on("ready", async () => {
   if(game.modules.get("compendium-folders") == undefined){
-    ui.notifications.error("Please download & enable COMPENDIUM FOLDERS module for SWADE-Core-Rules to function properly!")
+    ui.notifications.error("Please download & enable COMPENDIUM FOLDERS module for ETU-Rules to function properly!")
   } else if(game.modules.get("compendium-folders").active == false){
-    ui.notifications.error("Please enable COMPENDIUM FOLDERS modules in this world for SWADE-Core-Rules to work properly!")
+    ui.notifications.error("Please enable COMPENDIUM FOLDERS modules in this world for ETU-Rules to work properly!")
+  }
+  if(game.modules.get("gm-notes") == undefined){
+    ui.notifications.error("Please download & enable GM NOTES for ETU-Rules to function properly!")
+  } else if(game.modules.get("gm-notes").active == false){
+    ui.notifications.error("Please enable GM NOTES modules in this world for ETU-Rules to work properly!")
+  }
+  if(game.modules.get("game-icons-net") == undefined){
+    ui.notifications.error("Please download & enable GAME-ICONS.NET module for ETU-Rules to function properly!")
+  } else if(game.modules.get("game-icons-net").active == false){
+    ui.notifications.error("Please enable GAME-ICONS.NET modules in this world for ETU-Rules to work properly!")
   }
 
   //Force Building Pack Indexes so Entity Links don't break
